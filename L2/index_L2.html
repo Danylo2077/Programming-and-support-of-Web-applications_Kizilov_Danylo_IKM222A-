@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L2</title>
+</head>
+<body>
+    <h1>Завантажити файл</h1>
+    <form action="process.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="fileToUpload" accept="image/png, image/jpeg" required>
+        <input type="submit" value="Завантажити">
+    </form>
+
+    <h1>Записати текст у файл</h1>
+    <form action="text.php" method="post">
+        <textarea name="logText" rows="4" cols="50" required></textarea><br>
+        <input type="submit" value="Записати текст">
+    </form>
+
+    <h1>Список файлів</h1>
+    <a href="list.php">Переглянути всі файли</a>
+</body>
+</html>

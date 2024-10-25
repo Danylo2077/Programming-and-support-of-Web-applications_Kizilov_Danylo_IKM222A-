@@ -1,10 +1,3 @@
-<?php
-if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    // Перенаправлення користувача, якщо метод не POST
-    header("Location: server_info.php");
-    exit();
-}
-?>
 <!DOCTYPE html>
 <html lang="uk">
 <head>
